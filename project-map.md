@@ -9,6 +9,7 @@ Week 2:
 Kenzie:   
 AJ:  
 Colton:  
+Greg:  
 
 ## To-Do
 Pick a Project  
