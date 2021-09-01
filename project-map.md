@@ -28,7 +28,7 @@ Project ideation x
 Project decided x
 CSS color scheme decided x
 Site structure outlined x
-User interface created
+User interface created x
 API integration
 Testing
 Creating documentation
@@ -48,8 +48,8 @@ Colton:
 Michelle:
 
 ## To-Do
-Pick a Project  
-Setup Repo  
+Pick a Project x
+Setup Repo x
 Setup GitHub Issues
 Setup Project Branches 
 Assign Workload  
