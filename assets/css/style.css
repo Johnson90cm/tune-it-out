@@ -1,0 +1,24 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+
+header h1 {
+    justify-content: center;
+    background-image: linear-gradient(to right, #006466 , #4D194D);
+    text-align: center;
+    color: white;
+    height: 150px;
+    font-size: 50px;
+    font-stretch: expanded;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+    
+}
+
+.tour-dates, .spotify {
+    border: 5px solid darkblue;
+    margin: 5%;
+}
