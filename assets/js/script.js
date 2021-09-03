@@ -50,3 +50,4 @@ spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE')
   }, function(err) {
     console.error(err);
   });
+ }
