@@ -3,13 +3,26 @@
 
 header h1 {
     justify-content: center;
-    background-image: linear-gradient(to right, #006466 , #4D194D);
+
+    /* background-image: linear-gradient(to right, #006466 , #4D194D); */
     text-align: center;
     color: white;
-    height: 150px;
+    height: 60px;
+
+
     font-size: 50px;
     font-stretch: expanded;
 }
+
+
+body {
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/04/electric-guitar-009.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+
 
 .grid-container {
     display: grid;
@@ -18,7 +31,49 @@ header h1 {
     
 }
 
+
+.searchdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    margin-top: 25px;
+}
+
+.searchbox {
+    justify-content: center;
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 25px;
+}
+
+.tour-dates, .spotify {
+    border: 2px solid #0b525b;
+    background-color: #272640;
+    color: white;
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+h1 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
 .tour-dates, .spotify {
     border: 5px solid darkblue;
     margin: 5%;
 }
+
