@@ -1,4 +1,7 @@
-var spotifyApi = SpotifyWebApi({
+clientId = '682d29adad28470bbaa8b701f8bbf44f'
+clientSecret = '635b54c1f31480290c2da839407b242'
+
+var spotifyApi = new SpotifyWebApi({
   clientId: '682d29adad28470bbaa8b701f8bbf44f',
   clientSecret: '6635b54c1f31480290c2da839407b242',
   redirectUri: 'https://johnson90cm.github.io/group-project-1/callback',
@@ -7,9 +10,7 @@ var spotifyApi = SpotifyWebApi({
 /**
  * Get metadata of tracks, albums, artists, shows, and episodes
  */
-
- function getArtist(spotifyApi){
-  var apiUrl = "https://api.spotify.com/v1/artists/0oSGxfWSnnOXhD2fKuz2Gy" + 'clientId';
+  spotifyApi.setAccessToken('682d29adad28470bbaa8b701f8bbf44f');
 
 // Get album
 spotifyApi.getAlbum('5U4W9E5WsYb2jUQWePT8Xm')
@@ -50,3 +51,41 @@ spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE')
   }, function(err) {
     console.error(err);
   });
+  // Get an artist's top tracks
+spotifyApi.getArtistTopTracks('0oSGxfWSnnOXhD2fKuz2Gy', 'GB')
+.then(function(data) {
+  console.log(data.body);
+  }, function(err) {
+  console.log('Something went wrong!', err);
+});
+
+// Get artists related to an artist
+spotifyApi.getArtistRelatedArtists('0qeei9KQnptjwb8MgkqEoy')
+.then(function(data) {
+  console.log(data.body);
+}, function(err) {
+  done(err);
+});
+
+/* Get Audio Features for a Track */
+spotifyApi.getAudioFeaturesForTrack('3Qm86XLflmIXVm1wcwkgDK')
+.then(function(data) {
+  console.log(data.body);
+}, function(err) {
+  done(err);
+});
+
+/* Get Audio Analysis for a Track */
+spotifyApi.getAudioAnalysisForTrack('3Qm86XLflmIXVm1wcwkgDK')
+.then(function(data) {
+  console.log(data.body);
+}, function(err) {
+  done(err);
+});
+play({
+  playerInstance: new Spotify.Player({ name: "..." }),
+  spotify_uri: 'spotify:track:7xGfFoTpQ2E7fRF5lN10tr',
+});
+window.onSpotifyWebPlaybackSDKReady = () => {
+  // You can now initialize Spotify.Player and use the SDK
+};
