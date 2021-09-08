@@ -1,3 +1,9 @@
+clientId = '682d29adad28470bbaa8b701f8bbf44f'
+clientSecret = '635b54c1f31480290c2da839407b242'
+
+client_credentials_manager = SpotifyClientCredentials(client_id, client_secret)
+sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+
 var spotifyApi = SpotifyWebApi({
   clientId: '682d29adad28470bbaa8b701f8bbf44f',
   clientSecret: '6635b54c1f31480290c2da839407b242',
