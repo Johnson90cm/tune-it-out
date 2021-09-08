@@ -47,6 +47,7 @@ spotifyApi.getArtists(['2hazSY4Ef3aB9ATXW7F5w3', '6J6yx1t3nwIDyPXk5xa7O8'])
 spotifyApi.getArtistAlbums('43ZHCT0cAZBISjO8DG9PnE')
   .then(function(data) {
     console.log('Artist albums', data.body);
-  }, function(err) {
-    console.error(err);
-  });
+  })
+ }, function(err) {
+   console.error(err);
+ });
