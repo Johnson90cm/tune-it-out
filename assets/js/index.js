@@ -36,6 +36,32 @@ function artistSearch() {
   })
 };
 
+function topTracks() {
+    var searchName = document.querySelector(".searchName").value
+    fetch("https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + searchName + "&api_key=2d17ea9eb336a4fd1671a6f2603f1bbe&format=json")
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (artistData) {
+            console.log(artistData.toptracks);
+
+            var trackName = document.querySelector("#song-item-1")
+            trackName.innerHTML = "#1 " + artistData.toptracks.track[0].name
+
+            var trackName = document.querySelector("#song-item-2")
+            trackName.innerHTML = "#2 " + artistData.toptracks.track[1].name
+
+            var trackName = document.querySelector("#song-item-3")
+            trackName.innerHTML = "#3 " + artistData.toptracks.track[2].name
+
+            var trackName = document.querySelector("#song-item-4")
+            trackName.innerHTML = "#4 " + artistData.toptracks.track[3].name
+
+            var trackName = document.querySelector("#song-item-5")
+            trackName.innerHTML = "#5 " + artistData.toptracks.track[4].name
+        })
+}
+
 // Artist Events
 //https://rest.bandsintown.com/artists/{{artist_name}}/events/?app_id=yOUrSuP3r3ven7aPp-id
 function locationSearch() {
@@ -73,7 +99,9 @@ function locationSearch() {
      })
 }
 function myFunction() {
+        topTracks()
     locationSearch()
     artistSearch()
 }
 button.onclick=myFunction
+
