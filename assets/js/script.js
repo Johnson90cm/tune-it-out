@@ -153,7 +153,8 @@ window.onSpotifyWebPlaybackSDKReady = () => {
 spotifyApi.setAccessToken('BQBL3hlgetXA75s5ASMv9N1rA3YzNzLaJ6udagv5lBiGiM1zwnCSyl-ZHp6dWONeTZUKFEmjbf_ZGE4Ld_rWORJejAYXL3jqEKE795w2yIBPvLUxmMLovYaMZZTWn0BurgQEehYYs0NTzg');
 
 
-searchBtn.onclick = artistSearch
 })
 }
 
+var button = document.querySelector(".searchBtn")
+button.addEventListener("click", artistSearch)
