@@ -3,9 +3,9 @@
 
 body {
     font-family: "roboto";
-    background-image: url(https://images6.alphacoders.com/478/478918.jpg);
+    background-image: url(../img.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     text-align: center;
 }
 
@@ -139,8 +139,8 @@ h2 {
 
  #btnDiv {
      margin-top: 15px;
- }
-=======
+
+
 h3 {
     font-size: 15px;
 }
@@ -150,3 +150,4 @@ h3 {
      height: 200px; 
  
  } */
+
