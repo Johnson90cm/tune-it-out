@@ -1,6 +1,11 @@
 // Bands in town API  29aaf39bfa83b4edff793b76ddddfba0
 var searchBtn = document.querySelector(".searchBtn");
 
+
+// artists name
+//('https://rest.bandsintown.com/artists/' +{{artist_name}} +'/?app_id=29aaf39bfa83b4edff793b76ddddfba0')
+
+//
 function artistSearch() {
     var searchName = document.querySelector(".searchName").value
     console.log(searchName)
@@ -20,7 +25,9 @@ function artistSearch() {
     tourCount.innerHTML = "Upcoming Events: " + artistData.upcoming_event_count
 
     var button = document.createElement("a")
+
     button.textContent = ""
+
     button.innerHTML = "Tour Schedule"
     button.setAttribute("href", artistData.url)
 
