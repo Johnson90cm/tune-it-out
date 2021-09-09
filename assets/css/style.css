@@ -82,7 +82,6 @@ h2 {
     padding: 25px;
 }
 
-
 .date-item {
     padding: 15px;
 }
@@ -139,15 +138,4 @@ h2 {
 
  #btnDiv {
      margin-top: 15px;
-
-
-h3 {
-    font-size: 15px;
-}
-
-/* #photo { 
-     width: 200px; 
-     height: 200px; 
- 
- } */
-
+ }
