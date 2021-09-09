@@ -1,4 +1,3 @@
-
 var spotifyApi = SpotifyWebApi({
   clientId: '682d29adad28470bbaa8b701f8bbf44f',
   clientSecret: '6635b54c1f31480290c2da839407b242',
@@ -153,7 +152,8 @@ window.onSpotifyWebPlaybackSDKReady = () => {
 spotifyApi.setAccessToken('BQBL3hlgetXA75s5ASMv9N1rA3YzNzLaJ6udagv5lBiGiM1zwnCSyl-ZHp6dWONeTZUKFEmjbf_ZGE4Ld_rWORJejAYXL3jqEKE795w2yIBPvLUxmMLovYaMZZTWn0BurgQEehYYs0NTzg');
 
 
-searchBtn.onclick = artistSearch
 })
 }
 
+var button = document.querySelector(".searchBtn")
+button.addEventListener("click", artistSearch)
