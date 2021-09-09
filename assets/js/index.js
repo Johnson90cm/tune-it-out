@@ -25,6 +25,9 @@ function artistSearch() {
     tourCount.innerHTML = "Upcoming Events: " + artistData.upcoming_event_count
 
     var button = document.createElement("a")
+
+    button.textContent = ""
+
     button.innerHTML = "Tour Schedule"
     button.setAttribute("href", artistData.url)
 
@@ -33,6 +36,5 @@ function artistSearch() {
     })
 
 }
-
 
 searchBtn.onclick = artistSearch

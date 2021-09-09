@@ -1,9 +1,20 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
-header h1 {
-    justify-content: center;
 
-    /* background-image: linear-gradient(to right, #006466 , #4D194D); */
+body {
+    font-family: "roboto";
+    background-image: url(https://images6.alphacoders.com/478/478918.jpg);
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+
+header {
+    margin-top: 25px;
+}
+
+h1 {
+    justify-content: center;
     text-align: center;
     color: white;
     height: 60px;
@@ -13,64 +24,123 @@ header h1 {
     font-stretch: expanded;
 }
 
-body {
-    background-image: url(https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg);
-    background-position: center;
-    background-size: span;
-    text-align: center;
+h2 {
+    padding: 0px 0px 50px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 20px;
-    
 }
 
 .searchdiv {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-}
-
-button {
-    margin-top: 25px;
-    border-radius: 15px;
 }
 
 .searchbox {
     justify-content: center;
-    height: 42px;
-    width: 500px;
+    height: 35px;
+    width: 400px;
     border-radius: 10px;
     background-color: white;
     font-size: xx-large;
     text-align: center;
     outline:none;
+    resize:none;
 }
 
-button {
-    width: 100px;
-    height: 25px;
-    background-color: white;
+.searchBtn {
+    color: white;
+    background-color: teal;
+    margin-left: -50px;
+    height: 35px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
-button:focus {
-    background-color:white
+.searchBtn img {
+    width: 20px;
+    height: 20px;
 }
 
-.tour-dates, .spotify {
-    border: 2px solid #0b525b;
+.tour-container {
+    display: flex;
     background-color: #272640;
     color: white;
-    height: 300px;
     border-radius: 25px;
-    margin-top: 25px;
-}
-h1 {
-    font-size: 30px;
+    margin: 50px;
 }
 
+.tour-dates {
+    flex-direction: column;
+    padding: 25px;
+}
+
+
+.date-item {
+    padding: 15px;
+}
+
+.artist-div {
+    flex-direction: column;
+    padding: 25px;
+}
+
+.spotify {
+    display: flex;
+    flex-direction: column;
+    background-color: #272640;
+    color: white;
+    border-radius: 25px;
+    margin: 50px;
+}
+
+.playlist {
+    padding: 25px;
+}
+
+.song-item {
+    padding: 25px 0 15px;
+}
+
+.artist-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#photo { 
+    border-radius: 15px;
+    width: 250px; 
+    height: 250px; 
+ }
+
+ a {
+    color: white;
+    background-color: #0b525b;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+ }
+
+ a:hover {
+     color: white;
+ }
+
+ #btnDiv {
+     margin-top: 15px;
+ }
+=======
 h3 {
     font-size: 15px;
 }

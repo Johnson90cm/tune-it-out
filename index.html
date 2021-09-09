@@ -6,18 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Music Application</title>
+    <title>tune it out</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1 class="header">Music Application</h1>
+        <h1 class="header">Tune It Out</h1>
     </header>
+
+
+    <div class="searchdiv">
+        <textarea class="searchbox searchName" placeholder="search an artist" onfocus="this.value=''"></textarea>
+        <button class="searchBtn">
+            <img
+                src="https://cdn3.iconfinder.com/data/icons/search-engine-optimization-seo-3/320/loupe_magnifier_magnifying_search-512.png">
+        </button>
+    </div>
 
         <div class="searchdiv">
         <textarea class="searchbox searchName" placeholder= "Band Name"></textarea>
@@ -25,7 +36,44 @@
         <button class="searchBtn">Search</button>
 
 
+
     <div class="container grid-container">
+        <div class="tour-container">
+            <h1 class="tour-dates-h1"></h1>
+            <div class="artist-div">
+                <div>
+                    <img id="photo" />
+                </div>
+                <div>
+                    <h3 id="name"></h3>
+                </div>
+                <div>
+                    <h4 id="tourCount"></h4>
+                </div>
+                <div id="btnDiv">
+                </div>
+            </div>
+            <div class="tour-dates">
+                <div class="date-item">
+                    <h3>Date:</h3>
+                    <h3>City & Venue:</h3>
+                </div>
+                <div class="date-item">
+                    <h3>Date:</h3>
+                    <h3>City & Venue:</h3>
+                </div>
+                <div class="date-item">
+                    <h3>Date:</h3>
+                    <h3>City & Venue:</h3>
+                </div>
+                <div class="date-item">
+                    <h3>Date:</h3>
+                    <h3>City & Venue:</h3>
+                </div>
+                <div class="date-item">
+                    <h3>Date:</h3>
+                    <h3>City & Venue:</h3>
+                </div>
 
         <div class="tour-dates">
             <div>
@@ -42,26 +90,34 @@
             </div>
             <div id="btnDiv">
               
+
             </div>
         </div>
 
         <div class="spotify">
-            <div>
-                <h1>Playlist</h1>
+            <div class="playlist">
+                <div>
+                    <h1>Playlist</h1>
+                </div>
+                <div>
+                    <h3 class="song-item">Song</h3>
+                </div>
+                <div>
+                    <h3 class="song-item">Song</h3>
+                </div>
+                <div>
+                    <h3 class="song-item">Song</h3>
+                </div>
+                <div>
+                    <h3 class="song-item">Song</h3>
+                </div>
+                <div>
+                    <h3 class="song-item">Song</h3>
+                </div>
+
+                </div>
             </div>
-            <div>
-                <h3>Song</h3>
-            </div>
-            <div>
-                <h3>Song</h3>
-            </div>
-            <div>
-                <h3>Song</h3>
-            </div>
-            <div>
-                <h3>Song</h3>
-            </div>
-            
+
         </div>
 
     </div>
@@ -69,8 +125,14 @@
     <footer>
     </footer>
 
+
 <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/index.js"></script>
+
 <script src="./assets/js/index.js"></script>
+
 </body>
 
 </html>
