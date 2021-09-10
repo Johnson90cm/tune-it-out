@@ -98,10 +98,9 @@ function locationSearch() {
         venueThree.innerHTML = "Venue: " + locationData[2].venue.name
      })
 }
-function myFunction() {
-        topTracks()
+
+searchBtn.onclick = function() {
+    topTracks()
     locationSearch()
     artistSearch()
 }
-button.onclick=myFunction
-
