@@ -8,6 +8,6 @@ I WANT to search for a band and see a playlist of their music and also see when 
 SO THAT I can make plans to go see some live music.  
 
 Screenshot: 
-![](./image.png)
+![](./tune-it-out.PNG)
 
 Url: https://johnson90cm.github.io/tune-it-out/
